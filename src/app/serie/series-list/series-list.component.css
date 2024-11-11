@@ -1,0 +1,32 @@
+/* Estilos para el encabezado */
+.header {
+    background-color: #da72ec; 
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .table {
+    margin-top: 20px;
+  }
+  
+  .table thead {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr a {
+    color: #ca5ccc;
+    text-decoration: none;
+  }
+  
+  .table tbody tr a:hover {
+    text-decoration: underline;
+  }
+  

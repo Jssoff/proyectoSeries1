@@ -1,0 +1,25 @@
+<div class="header">
+  <img src="https://img.icons8.com/color/48/000000/tv.png" alt="TV Icon" style="margin-right: 10px;">
+  <span>TV Series</span>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Channel</th>
+      <th>Seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let serie of series; index as i">
+      <td>{{ i + 1 }}</td>
+      <td><a href="#">{{ serie.name }}</a></td>
+      <td>{{ serie.channel }}</td>
+      <td>{{ serie.seasons }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong> Seasons average:</strong> {{ averageSeasons | number: '1.1-1' }}</p>
